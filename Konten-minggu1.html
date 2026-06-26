@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 3: Workflow Produksi Konten - @pastijaga</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #2d3748;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            color: #ffffff;
+            padding: 2.5rem 3rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .header .subtitle {
+            font-size: 1rem;
+            color: #a0aec0;
+            font-weight: 400;
+        }
+
+        .header .channel-badge {
+            display: inline-block;
+            margin-top: 1rem;
+            background: rgba(102, 126, 234, 0.2);
+            border: 1px solid rgba(102, 126, 234, 0.4);
+            padding: 0.4rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #a3bffa;
+        }
+
+        .content {
+            padding: 3rem;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: #1a202c;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 3px solid #667eea;
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: #4a5568;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 4px solid #667eea;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #4a5568;
+        }
+
+        .prompt-intro {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.75rem;
+        }
+
+        .code-block {
+            background: #1a202c;
+            color: #e2e8f0;
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin: 1rem 0 2rem 0;
+            overflow-x: auto;
+            font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            position: relative;
+            border: 1px solid #2d3748;
+        }
+
+        .code-block::before {
+            content: 'PROMPT';
+            position: absolute;
+            top: 0.5rem;
+            right: 1rem;
+            font-size: 0.7rem;
+            color: #667eea;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .code-block .placeholder {
+            color: #f6ad55;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2.5rem;
+            border: 1px solid #e2e8f0;
+        }
+
+        .cta-section h4 {
+            font-size: 1.1rem;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+
+        .cta-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            gap: 0.75rem;
+        }
+
+        .cta-item .icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .cta-item .icon.whatsapp {
+            background: #25d366;
+            color: white;
+        }
+
+        .cta-item .icon.web {
+            background: #667eea;
+            color: white;
+        }
+
+        .cta-item a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .cta-item a:hover {
+            color: #5a67d8;
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1.5rem 3rem;
+            background: #f7fafc;
+            border-top: 1px solid #e2e8f0;
+            color: #a0aec0;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem 0.5rem;
+            }
+
+            .header {
+                padding: 2rem 1.5rem;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 2rem 1.5rem;
+            }
+
+            .code-block {
+                padding: 1rem 1.25rem;
+                font-size: 0.8rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            h3 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>STEP 3: Workflow Produksi Konten</h1>
+            <p class="subtitle">Panduan lengkap untuk membuat video package menggunakan NotebookLM</p>
+            <span class="channel-badge">Channel: @pastijaga | Niche Asuransi</span>
+        </div>
+
+        <div class="content">
+            <!-- Section 3.1 -->
+            <div class="section">
+                <h2>3.1 Cara Menggunakan</h2>
+                <p><em>Setiap Kali Mau Buat Video Baru</em></p>
+
+                <h3>Di NotebookLM, ketik prompt seperti ini:</h3>
+
+                <div class="code-block">
+Buatkan COMPLETE VIDEO PACKAGE dengan topik:<br>
+"<span class="placeholder">[TOPIK ANDA]</span>"<br>
+<br>
+Target: <span class="placeholder">[nasabah baru / rekrut agen / edukasi umum]</span><br>
+Durasi: <span class="placeholder">[60 detik / 3 menit / 5 menit]</span><br>
+Angle: <span class="placeholder">[fear of loss / aspirational / educational / controversial take]</span><br>
+<br>
+Gunakan MASTER PROMPT yang ada di Notes sebagai panduan format output.<br>
+Referensikan semua source yang tersedia untuk akurasi konten.
+                </div>
+            </div>
+
+            <!-- Section 3.2 -->
+            <div class="section">
+                <h2>3.2 Contoh Prompt Spesifik</h2>
+
+                <div class="code-block">
+Buatkan COMPLETE VIDEO PACKAGE dengan topik:<br>
+"Kenapa anak muda Indonesia meninggal tanpa meninggalkan warisan yang cukup"<br>
+<br>
+Target: nasabah baru (usia 25-35, baru menikah/punya anak)<br>
+Durasi: 3 menit<br>
+Angle: fear of loss + educational + solusi harapan<br>
+<br>
+Gunakan MASTER PROMPT dan semua source sebagai panduan.
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <h4>Call to Action (CTA)</h4>
+                <div class="cta-item">
+                    <div class="icon whatsapp">&#9742;</div>
+                    <div>
+                        <strong>WhatsApp:</strong>
+                        <a href="https://wa.me/6287781896087" target="_blank">087781896087</a>
+                    </div>
+                </div>
+                <div class="cta-item">
+                    <div class="icon web">&#127760;</div>
+                    <div>
+                        <strong>Web:</strong>
+                        <a href="https://pastijaga.petrusjakub.workers.dev/" target="_blank">https://pastijaga.petrusjakub.workers.dev/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; 2025 @pastijaga - Konten Minggu 1 | Step 3: Workflow Produksi Konten
+        </div>
+    </div>
+</body>
+</html>
