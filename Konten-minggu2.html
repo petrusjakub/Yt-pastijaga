@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konten Minggu 2: Story/Testimonial - @pastijaga</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #2d3748;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            color: #ffffff;
+            padding: 2.5rem 3rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .header .subtitle {
+            font-size: 1rem;
+            color: #a0aec0;
+            font-weight: 400;
+        }
+
+        .header .channel-badge {
+            display: inline-block;
+            margin-top: 1rem;
+            background: rgba(102, 126, 234, 0.2);
+            border: 1px solid rgba(102, 126, 234, 0.4);
+            padding: 0.4rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #a3bffa;
+        }
+
+        .content {
+            padding: 3rem;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: #1a202c;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 3px solid #667eea;
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: #4a5568;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 4px solid #667eea;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #4a5568;
+        }
+
+        .code-block {
+            background: #1a202c;
+            color: #e2e8f0;
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin: 1rem 0 2rem 0;
+            overflow-x: auto;
+            font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            position: relative;
+            border: 1px solid #2d3748;
+        }
+
+        .code-block::before {
+            content: 'KONTEN';
+            position: absolute;
+            top: 0.5rem;
+            right: 1rem;
+            font-size: 0.7rem;
+            color: #667eea;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .code-block .highlight {
+            color: #f6ad55;
+        }
+
+        .code-block .hook {
+            color: #fc8181;
+        }
+
+        .code-block .label {
+            color: #68d391;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2.5rem;
+            border: 1px solid #e2e8f0;
+        }
+
+        .cta-section h4 {
+            font-size: 1.1rem;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+
+        .cta-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            gap: 0.75rem;
+        }
+
+        .cta-item .icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .cta-item .icon.whatsapp {
+            background: #25d366;
+            color: white;
+        }
+
+        .cta-item .icon.web {
+            background: #667eea;
+            color: white;
+        }
+
+        .cta-item a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .cta-item a:hover {
+            color: #5a67d8;
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1.5rem 3rem;
+            background: #f7fafc;
+            border-top: 1px solid #e2e8f0;
+            color: #a0aec0;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem 0.5rem;
+            }
+
+            .header {
+                padding: 2rem 1.5rem;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 2rem 1.5rem;
+            }
+
+            .code-block {
+                padding: 1rem 1.25rem;
+                font-size: 0.8rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            h3 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Konten Minggu 2: Story/Testimonial</h1>
+            <p class="subtitle">Build Trust - Cerita nyata yang menyentuh hati dan membangun kepercayaan</p>
+            <span class="channel-badge">Channel: @pastijaga | Niche Asuransi</span>
+        </div>
+
+        <div class="content">
+            <!-- Ide Konten 1 -->
+            <div class="section">
+                <h2>Ide #1</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"Suami Meninggal Mendadak, Istri Dapat 500 Juta dalam 14 Hari"</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"Bayangkan... suami lo meninggal hari ini. Besok siapa yang bayar cicilan rumah? Siapa yang biayain sekolah anak? Cerita ini beneran terjadi."</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Opening: Situasi keluarga muda, suami satu-satunya pencari nafkah<br>
+2. Konflik: Suami meninggal karena serangan jantung di usia 35 tahun<br>
+3. Turning point: Istri ingat polis asuransi yang dibeli 2 tahun lalu<br>
+4. Resolusi: Klaim cair 500 juta dalam 14 hari kerja<br>
+5. After: Istri bisa bayar cicilan, biaya sekolah anak, dan mulai usaha kecil<br>
+6. Lesson: Asuransi bukan untuk yang meninggal, tapi untuk yang ditinggalkan<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Emotional storytelling + fear of loss + solusi nyata</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Pasangan muda 25-40 tahun, punya tanggungan (cicilan/anak)<br>
+<br>
+<span class="label">CTA:</span><br>
+"Mau tau berapa premi untuk proteksi keluarga lo? Chat aku sekarang."
+                </div>
+            </div>
+
+            <!-- Ide Konten 2 -->
+            <div class="section">
+                <h2>Ide #2</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"Divonis Kanker Stadium 3, Tapi Gak Keluar Uang Sepeser pun untuk Berobat"</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"Dia divonis kanker stadium 3. Biaya pengobatan 800 juta. Tapi dia gak jual rumah, gak pinjam bank, gak galang dana online. Ini rahasianya."</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Opening: Perkenalan karakter - ibu 2 anak, pekerja kantoran biasa<br>
+2. Diagnosis: Divonis kanker payudara stadium 3, butuh kemo + operasi<br>
+3. Realita biaya: Breakdown total biaya pengobatan kanker di Indonesia<br>
+4. Plot twist: Punya asuransi kesehatan dengan rider critical illness<br>
+5. Proses klaim: Lump sum cair 300 juta + biaya RS ditanggung penuh<br>
+6. Sekarang: Sudah remisi, bisa fokus sembuh tanpa beban finansial<br>
+7. Pesan: "Yang mahal bukan premi asuransi, yang mahal itu berobat tanpa asuransi"<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Real story + medical reality check + hope</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Usia 30-50, concern kesehatan, belum punya asuransi kesehatan memadai<br>
+<br>
+<span class="label">CTA:</span><br>
+"Jangan tunggu sakit dulu baru nyesel. Cek opsi proteksi kesehatan lo sekarang."
+                </div>
+            </div>
+
+            <!-- Ide Konten 3 -->
+            <div class="section">
+                <h2>Ide #3</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"Kecelakaan Motor, Lumpuh Permanen. Tapi Keluarganya Tetap Makan."</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"Dia cuma ojol biasa. Kecelakaan, lumpuh dari pinggang ke bawah. Gak bisa kerja seumur hidup. Tapi keluarganya masih bisa makan tiap hari. Kok bisa?"</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Opening: Profil - driver ojol, tulang punggung keluarga 4 orang<br>
+2. Insiden: Kecelakaan di jalan, cedera tulang belakang permanen<br>
+3. Dampak: Tidak bisa bekerja lagi, istri ibu rumah tangga, 2 anak kecil<br>
+4. Penyelamat: Polis asuransi kecelakaan dengan benefit cacat tetap total<br>
+5. Klaim: Menerima santunan bulanan + lump sum cacat tetap<br>
+6. Hikmah: Keluarga tetap survive, anak tetap sekolah<br>
+7. Pesan: "Asuransi itu bukan kemewahan. Buat orang biasa, ini penyelamat."<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Working class hero story + empati + kesadaran</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Pekerja informal, freelancer, gig worker yang merasa "gak perlu asuransi"<br>
+<br>
+<span class="label">CTA:</span><br>
+"Proteksi itu bukan cuma buat orang kaya. Mulai dari 100rb/bulan. Tanya aku."
+                </div>
+            </div>
+
+            <!-- Ide Konten 4 -->
+            <div class="section">
+                <h2>Ide #4</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"Ayah Saya Meninggal Tanpa Asuransi. Ini yang Terjadi pada Keluarga Kami."</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"Ayah saya meninggal 10 tahun lalu. Tanpa asuransi. Tanpa tabungan. Dan hidup kami hancur dalam sekejap. Ini cerita yang gak pernah saya share ke siapapun."</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Opening: Narasi personal - kehidupan sebelum ayah meninggal<br>
+2. Tragedy: Ayah meninggal mendadak, zero financial preparation<br>
+3. Dampak langsung: Ibu harus jual rumah, pindah kontrakan kecil<br>
+4. Dampak jangka panjang: Kakak berhenti kuliah, adik hampir putus sekolah<br>
+5. Struggle: 5 tahun pertama penuh penderitaan finansial<br>
+6. Kesadaran: "Kalau saja ayah punya asuransi jiwa sederhana..."<br>
+7. Sekarang: Narrator jadi agen asuransi karena gak mau keluarga lain alami hal sama<br>
+8. Pesan: "Jangan biarkan keluarga lo menanggung beban yang seharusnya bisa dicegah"<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Personal vulnerability + regret story + call to prevent</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Kepala keluarga 25-45 tahun yang belum punya proteksi jiwa<br>
+<br>
+<span class="label">CTA:</span><br>
+"Jangan ulangi kesalahan yang sama. Proteksi keluarga lo mulai hari ini."
+                </div>
+            </div>
+
+            <!-- Ide Konten 5 -->
+            <div class="section">
+                <h2>Ide #5</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"Agen Asuransi Ini Dulu Pengangguran. Sekarang Penghasilannya 50 Juta/Bulan."</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"3 tahun lalu dia nganggur, utang numpuk, hampir depresi. Sekarang income-nya 50 juta per bulan. Bukan jualan online. Bukan trading. Ini caranya."</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Opening: Situasi 3 tahun lalu - pengangguran, utang, hopeless<br>
+2. Titik balik: Diajak teman gabung jadi agen asuransi (skeptis awalnya)<br>
+3. Awal mula: 3 bulan pertama struggle, belajar, ditolak banyak orang<br>
+4. Momentum: Bulan ke-4 mulai closing konsisten<br>
+5. Growth: Bangun tim, passive income dari overriding<br>
+6. Sekarang: Income 50 juta/bulan, punya tim 30 orang, waktu fleksibel<br>
+7. Kunci sukses: Mindset, konsistensi, dan genuine care ke nasabah<br>
+8. Pesan: "Asuransi bukan cuma proteksi nasabah, tapi juga bisa mengubah hidup agen-nya"<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Rags to riches + inspirational + recruitment teaser</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Job seeker, orang yang stuck di karir, yang cari peluang income tambahan<br>
+<br>
+<span class="label">CTA:</span><br>
+"Mau tau gimana caranya mulai karir di asuransi tanpa modal? Chat aku."
+                </div>
+            </div>
+
+            <!-- Ide Konten 6 -->
+            <div class="section">
+                <h2>Ide #6</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"Anak Kecil Ini Kehilangan Kedua Orang Tuanya. Tapi Dana Pendidikannya Aman Sampai S1."</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"Kedua orang tuanya meninggal dalam kecelakaan yang sama. Dia baru 7 tahun. Tapi sampai hari ini, biaya sekolahnya tetap jalan. Ada yang jaga dia dari jauh."</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Opening: Keluarga bahagia - ayah, ibu, dan anak tunggal usia 7 tahun<br>
+2. Tragedi: Kedua orang tua meninggal dalam kecelakaan<br>
+3. Situasi anak: Diasuh nenek yang sudah tua, kondisi ekonomi terbatas<br>
+4. Penyelamat tersembunyi: Orang tua sudah siapkan polis asuransi pendidikan<br>
+5. Manfaat: Dana pendidikan cair bertahap sesuai jenjang sekolah<br>
+6. Sekarang: Anak sudah SMA, dana masih tersedia sampai kuliah S1<br>
+7. Pesan: "Cinta orang tua sejati itu yang masih terasa bahkan setelah mereka tiada"<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Tearjerker + parental love + legacy planning</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Orang tua muda yang punya anak kecil, belum siapkan dana pendidikan<br>
+<br>
+<span class="label">CTA:</span><br>
+"Sudah siapkan warisan cinta untuk anak lo? Yuk konsultasi gratis."
+                </div>
+            </div>
+
+            <!-- Ide Konten 7 -->
+            <div class="section">
+                <h2>Ide #7</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"Dia Bayar Premi 500rb/Bulan Selama 5 Tahun. Pas Kena Stroke, Dapat 1 Miliar."</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"Total premi yang dia bayar: 30 juta. Total klaim yang dia terima: 1 MILIAR. Ini bukan scam, bukan investasi bodong. Ini asuransi yang benar."</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Opening: Pria 42 tahun, karyawan swasta, rajin bayar premi 500rb/bulan<br>
+2. Konteks: Sudah bayar selama 5 tahun, total 30 juta<br>
+3. Musibah: Terkena stroke di usia 47, termasuk penyakit kritis<br>
+4. Klaim: Asuransi penyakit kritis cair 1 miliar (lump sum)<br>
+5. Penggunaan: Biaya RS, rehabilitasi, dan modal hidup selama recovery<br>
+6. Matematika: ROI premi vs klaim = 33x lipat<br>
+7. Pesan: "Asuransi bukan pengeluaran. Asuransi itu pembelian kepastian."<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Math-based proof + value demonstration + logical appeal</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Orang yang ragu asuransi "rugi kalau gak klaim", tipe analitis<br>
+<br>
+<span class="label">CTA:</span><br>
+"Mau tau produk mana yang kasih proteksi penyakit kritis terbaik? Aku bantu pilih."
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <h4>Hubungi Kami</h4>
+                <div class="cta-item">
+                    <div class="icon whatsapp">&#9742;</div>
+                    <div>
+                        <strong>WhatsApp:</strong>
+                        <a href="https://wa.me/6287781896087" target="_blank">087781896087</a>
+                    </div>
+                </div>
+                <div class="cta-item">
+                    <div class="icon web">&#127760;</div>
+                    <div>
+                        <strong>Web:</strong>
+                        <a href="https://pastijaga.petrusjakub.workers.dev/" target="_blank">https://pastijaga.petrusjakub.workers.dev/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; 2025 @pastijaga - Konten Minggu 2 | Story/Testimonial - Build Trust
+        </div>
+    </div>
+</body>
+</html>

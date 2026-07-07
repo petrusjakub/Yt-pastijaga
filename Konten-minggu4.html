@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konten Minggu 4: Recruitment - @pastijaga</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #2d3748;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            color: #ffffff;
+            padding: 2.5rem 3rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .header .subtitle {
+            font-size: 1rem;
+            color: #a0aec0;
+            font-weight: 400;
+        }
+
+        .header .channel-badge {
+            display: inline-block;
+            margin-top: 1rem;
+            background: rgba(102, 126, 234, 0.2);
+            border: 1px solid rgba(102, 126, 234, 0.4);
+            padding: 0.4rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #a3bffa;
+        }
+
+        .content {
+            padding: 3rem;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: #1a202c;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 3px solid #667eea;
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: #4a5568;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 4px solid #667eea;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #4a5568;
+        }
+
+        .code-block {
+            background: #1a202c;
+            color: #e2e8f0;
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin: 1rem 0 2rem 0;
+            overflow-x: auto;
+            font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            position: relative;
+            border: 1px solid #2d3748;
+        }
+
+        .code-block::before {
+            content: 'KONTEN';
+            position: absolute;
+            top: 0.5rem;
+            right: 1rem;
+            font-size: 0.7rem;
+            color: #667eea;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .code-block .highlight {
+            color: #f6ad55;
+        }
+
+        .code-block .hook {
+            color: #fc8181;
+        }
+
+        .code-block .label {
+            color: #68d391;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2.5rem;
+            border: 1px solid #e2e8f0;
+        }
+
+        .cta-section h4 {
+            font-size: 1.1rem;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+
+        .cta-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            gap: 0.75rem;
+        }
+
+        .cta-item .icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .cta-item .icon.whatsapp {
+            background: #25d366;
+            color: white;
+        }
+
+        .cta-item .icon.web {
+            background: #667eea;
+            color: white;
+        }
+
+        .cta-item a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .cta-item a:hover {
+            color: #5a67d8;
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1.5rem 3rem;
+            background: #f7fafc;
+            border-top: 1px solid #e2e8f0;
+            color: #a0aec0;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem 0.5rem;
+            }
+
+            .header {
+                padding: 2rem 1.5rem;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 2rem 1.5rem;
+            }
+
+            .code-block {
+                padding: 1rem 1.25rem;
+                font-size: 0.8rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            h3 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Konten Minggu 4: Recruitment</h1>
+            <p class="subtitle">Target Calon Agen - Peluang karir, income potential, dan kebebasan finansial</p>
+            <span class="channel-badge">Channel: @pastijaga | Niche Asuransi</span>
+        </div>
+
+        <div class="content">
+            <!-- Ide Konten 1 -->
+            <div class="section">
+                <h2>Ide #1</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"Gaji 5 Juta Stuck Bertahun-tahun? Ini Karir yang Bisa Kasih Lo 50 Juta/Bulan TANPA Ijazah S1"</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"Lo kerja 9-to-5, gaji UMR, naik 5% setahun. Di usia 40, masih stuck di posisi yang sama. Tapi ada orang yang income-nya 50 juta/bulan, kerja dari HP, tanpa ijazah sarjana. Ini bukan MLM."</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Problem: Realita pekerja kantoran Indonesia - gaji stagnan, karir mentok<br>
+2. Alternatif: Karir agen asuransi - berbasis performa, bukan senioritas<br>
+3. Income structure: Komisi first year + renewal + overriding + bonus<br>
+4. Contoh nyata: Income breakdown agen tahun pertama vs tahun ketiga<br>
+5. Kualifikasi: Gak perlu S1, gak perlu modal, gak perlu pengalaman<br>
+6. Yang dibutuhkan: Kemauan belajar, konsistensi, kemampuan komunikasi<br>
+7. Perbandingan: Karir konvensional vs karir agen - 5 tahun ke depan<br>
+8. Closing: "Pertanyaannya bukan BISA atau gak. Tapi MAU atau gak."<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Career comparison + income potential + aspirational</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Karyawan gaji UMR-10 juta, merasa stuck, cari peluang income lebih<br>
+<br>
+<span class="label">CTA:</span><br>
+"Mau tau detail income plan agen asuransi? Chat aku, aku jelaskan transparan."
+                </div>
+            </div>
+
+            <!-- Ide Konten 2 -->
+            <div class="section">
+                <h2>Ide #2</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"Cara Menghasilkan Uang dari HP Tanpa Modal - BUKAN Jualan Online, BUKAN Affiliate"</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"Gue hasilkan 30 juta bulan lalu. Modal: HP dan mulut doang. Gak jual produk fisik, gak perlu stok barang, gak perlu followers jutaan. Dan lo bisa mulai HARI INI."</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Tease: Apa sih kerjaan yang modal cuma HP dan skill komunikasi?<br>
+2. Reveal: Agen asuransi digital - semua proses bisa online<br>
+3. Step-by-step memulai: Daftar (gratis), training, ujian AAJI, mulai prospecting<br>
+4. Cara kerja: Edukasi orang tentang proteksi, bantu pilih produk, closing<br>
+5. Income: Komisi 30-50% dari premi tahun pertama<br>
+6. Matematika: 1 nasabah premi 500rb/bulan = komisi 1.8 juta. 10 nasabah = 18 juta<br>
+7. Kelebihan: Flexible, bisa sambil kerja lain, residual income<br>
+8. Pesan: "Ini bukan skema cepat kaya. Tapi ini REAL business tanpa modal."<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Zero capital business + step by step + realistic expectation</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Mahasiswa, fresh graduate, ibu rumah tangga, freelancer cari tambahan<br>
+<br>
+<span class="label">CTA:</span><br>
+"Mau mulai tanpa modal? Aku guide dari NOL sampai closing pertama. Chat sekarang."
+                </div>
+            </div>
+
+            <!-- Ide Konten 3 -->
+            <div class="section">
+                <h2>Ide #3</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"Dulu Diremehkan Keluarga, Sekarang Jadi Top Earner. Kisah Agen yang Buktikan Diri."</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"Keluarganya bilang: 'Ngapain jadi agen asuransi? Gak ada masa depan!' 2 tahun kemudian, dia yang bayarin liburan keluarga ke luar negeri. Cash."</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Background: Lulusan SMA, gak diterima kerja kantoran manapun<br>
+2. Keputusan: Gabung jadi agen, diremehkan semua orang terdekat<br>
+3. Awal berat: 2 bulan pertama gak ada closing, hampir menyerah<br>
+4. Titik balik: Mentor yang sabar, training yang konsisten<br>
+5. Bulan ke-3: Closing pertama, semangat baru<br>
+6. Bulan ke-6: Sudah punya 15 nasabah, income 15 juta/bulan<br>
+7. Tahun ke-2: Top earner di agency, income 40-60 juta/bulan<br>
+8. Sekarang: Punya tim 25 orang, passive income dari overriding<br>
+9. Pesan: "Yang ngeremehkan dulu sekarang minta tolong diajarin"<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Underdog story + revenge success + motivational</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Orang yang punya potensi tapi kurang percaya diri, sering diremehkan<br>
+<br>
+<span class="label">CTA:</span><br>
+"Lo gak butuh ijazah, gak butuh koneksi. Lo cuma butuh KEBERANIAN mulai. Chat aku."
+                </div>
+            </div>
+
+            <!-- Ide Konten 4 -->
+            <div class="section">
+                <h2>Ide #4</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"Kerja 4 Jam Sehari, Income Lebih dari Manager Bank. Ini Realita Agen Asuransi."</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"Pagi ini gue bangun jam 8, anter anak sekolah, ngopi santai, baru mulai kerja jam 10. Jam 2 siang udah selesai. Dan bulan ini income gue lebih dari manager bank. Gimana bisa?"</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Day in the life: Rutinitas harian agen asuransi yang sudah established<br>
+2. Pagi: Personal time, keluarga, olahraga<br>
+3. Kerja (4-5 jam): Follow up prospek, meeting online, closing<br>
+4. Sisanya: Free time, hobi, family time<br>
+5. Income: Komisi aktif + residual income dari portofolio nasabah<br>
+6. Perbandingan: Jam kerja vs income dibanding profesi lain<br>
+7. Disclaimer: Ini hasil setelah 3 tahun membangun. Awal-awal tetap hustle<br>
+8. Formula: 1-2 tahun kerja keras = 10+ tahun time freedom<br>
+9. Pesan: "Kebebasan waktu itu privilege yang harus lo bangun, bukan lo tunggu"<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Lifestyle design + time freedom + realistic timeline</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Pekerja yang burnt out, ibu yang ingin waktu lebih untuk keluarga<br>
+<br>
+<span class="label">CTA:</span><br>
+"Mau punya waktu lebih untuk hal yang penting? Karir ini bisa kasih itu. Yuk ngobrol."
+                </div>
+            </div>
+
+            <!-- Ide Konten 5 -->
+            <div class="section">
+                <h2>Ide #5</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"5 Alasan Kenapa 2025 Adalah Waktu TERBAIK Jadi Agen Asuransi"</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"Penetrasi asuransi di Indonesia baru 3%. Artinya? 97% orang Indonesia BELUM punya asuransi. Ini bukan masalah. Ini PELUANG EMAS buat lo yang berani ambil sekarang."</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Alasan #1: Market masih SANGAT besar - 97% belum terproteksi<br>
+2. Alasan #2: Digitalisasi - bisa prospecting online, jangkau seluruh Indonesia<br>
+3. Alasan #3: Awareness meningkat post-COVID - orang makin sadar pentingnya proteksi<br>
+4. Alasan #4: Income tidak ada ceiling - makin banyak nasabah, makin besar income<br>
+5. Alasan #5: Residual income - nasabah bayar premi setiap tahun, lo dapat renewal<br>
+6. Bonus: Career path jelas - agen, senior, manager, director<br>
+7. Data: Industri asuransi Indonesia tumbuh 15-20% per tahun<br>
+8. Pesan: "First mover advantage. Yang mulai sekarang, panen duluan."<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Market opportunity + data driven + FOMO positif</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Orang yang sedang cari peluang bisnis/karir baru di 2025<br>
+<br>
+<span class="label">CTA:</span><br>
+"Mau jadi bagian dari 3% yang melayani 97% pasar? Gabung tim kami sekarang."
+                </div>
+            </div>
+
+            <!-- Ide Konten 6 -->
+            <div class="section">
+                <h2>Ide #6</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"Ibu Rumah Tangga Ini Hasilkan 20 Juta/Bulan dari Rumah. Suaminya Sampai Resign."</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"Dulu dia 'cuma' ibu rumah tangga. Sekarang income-nya 20 juta per bulan, kerja dari rumah sambil urus anak. Suaminya? Resign dari kantoran dan ikut gabung di tim dia."</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Background: Ibu rumah tangga, 2 anak, suami kerja gaji pas-pasan<br>
+2. Motivasi: Ingin bantu keuangan keluarga tanpa ninggalin anak<br>
+3. Gabung jadi agen: Awalnya part-time, 2-3 jam sehari<br>
+4. Strategi: Mulai dari circle terdekat, arisan, grup WA ibu-ibu<br>
+5. Bulan ke-3: Income sudah 5 juta, lebih dari expected<br>
+6. Bulan ke-8: Income 15-20 juta, konsisten<br>
+7. Plot twist: Suami lihat hasil, resign, ikut jadi agen di tim istri<br>
+8. Sekarang: Family business, income gabungan 50+ juta, waktu fleksibel<br>
+9. Pesan: "Lo gak perlu ninggalin keluarga untuk sukses secara finansial"<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Women empowerment + family success + relatable</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Ibu rumah tangga, istri yang ingin mandiri finansial, pasangan muda<br>
+<br>
+<span class="label">CTA:</span><br>
+"Mau mulai dari rumah, sambil urus anak? Aku tunjukkan caranya. Chat aku."
+                </div>
+            </div>
+
+            <!-- Ide Konten 7 -->
+            <div class="section">
+                <h2>Ide #7</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"Agen Asuransi vs Karyawan: Perbandingan JUJUR Setelah 5 Tahun"</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"Gue punya 2 teman. Satu jadi karyawan bank, satu jadi agen asuransi. Mulai di waktu yang sama, 5 tahun lalu. Hari ini, perbedaan mereka bikin lo melongo."</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Intro: 2 orang, background sama, pilihan karir berbeda<br>
+2. Tahun 1: Karyawan gaji 8 juta (stabil). Agen income 3-5 juta (struggle)<br>
+3. Tahun 2: Karyawan gaji 9 juta. Agen income 10-15 juta (mulai konsisten)<br>
+4. Tahun 3: Karyawan gaji 10 juta + lembur. Agen income 25 juta (punya tim)<br>
+5. Tahun 4: Karyawan gaji 11 juta (mentok). Agen income 35 juta (tim growing)<br>
+6. Tahun 5: Karyawan gaji 12 juta. Agen income 50+ juta + residual<br>
+7. Perbandingan lain: Waktu, stress, growth potential, pension plan<br>
+8. Disclaimer: Ini bukan bilang kerja kantoran salah. Tapi kasih perspektif<br>
+9. Pesan: "Pilihan lo hari ini menentukan hidup lo 5 tahun dari sekarang"<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Side-by-side comparison + long-term thinking + eye-opening</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Karyawan usia 25-35 yang mulai questioning career path mereka<br>
+<br>
+<span class="label">CTA:</span><br>
+"Penasaran seperti apa 5 tahun lo ke depan kalau mulai sekarang? Yuk ngobrol."
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <h4>Hubungi Kami</h4>
+                <div class="cta-item">
+                    <div class="icon whatsapp">&#9742;</div>
+                    <div>
+                        <strong>WhatsApp:</strong>
+                        <a href="https://wa.me/6287781896087" target="_blank">087781896087</a>
+                    </div>
+                </div>
+                <div class="cta-item">
+                    <div class="icon web">&#127760;</div>
+                    <div>
+                        <strong>Web:</strong>
+                        <a href="https://pastijaga.petrusjakub.workers.dev/" target="_blank">https://pastijaga.petrusjakub.workers.dev/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; 2025 @pastijaga - Konten Minggu 4 | Recruitment - Target Calon Agen
+        </div>
+    </div>
+</body>
+</html>

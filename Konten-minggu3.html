@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konten Minggu 3: Controversial/Myth-busting - @pastijaga</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #2d3748;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            color: #ffffff;
+            padding: 2.5rem 3rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .header .subtitle {
+            font-size: 1rem;
+            color: #a0aec0;
+            font-weight: 400;
+        }
+
+        .header .channel-badge {
+            display: inline-block;
+            margin-top: 1rem;
+            background: rgba(102, 126, 234, 0.2);
+            border: 1px solid rgba(102, 126, 234, 0.4);
+            padding: 0.4rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #a3bffa;
+        }
+
+        .content {
+            padding: 3rem;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: #1a202c;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 3px solid #667eea;
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: #4a5568;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 4px solid #667eea;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #4a5568;
+        }
+
+        .code-block {
+            background: #1a202c;
+            color: #e2e8f0;
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin: 1rem 0 2rem 0;
+            overflow-x: auto;
+            font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            position: relative;
+            border: 1px solid #2d3748;
+        }
+
+        .code-block::before {
+            content: 'KONTEN';
+            position: absolute;
+            top: 0.5rem;
+            right: 1rem;
+            font-size: 0.7rem;
+            color: #667eea;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .code-block .highlight {
+            color: #f6ad55;
+        }
+
+        .code-block .hook {
+            color: #fc8181;
+        }
+
+        .code-block .label {
+            color: #68d391;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2.5rem;
+            border: 1px solid #e2e8f0;
+        }
+
+        .cta-section h4 {
+            font-size: 1.1rem;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+
+        .cta-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            gap: 0.75rem;
+        }
+
+        .cta-item .icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .cta-item .icon.whatsapp {
+            background: #25d366;
+            color: white;
+        }
+
+        .cta-item .icon.web {
+            background: #667eea;
+            color: white;
+        }
+
+        .cta-item a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .cta-item a:hover {
+            color: #5a67d8;
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1.5rem 3rem;
+            background: #f7fafc;
+            border-top: 1px solid #e2e8f0;
+            color: #a0aec0;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem 0.5rem;
+            }
+
+            .header {
+                padding: 2rem 1.5rem;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 2rem 1.5rem;
+            }
+
+            .code-block {
+                padding: 1rem 1.25rem;
+                font-size: 0.8rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            h3 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Konten Minggu 3: Controversial/Myth-busting</h1>
+            <p class="subtitle">Viral Potential - Bongkar mitos, hancurkan misconception, bikin orang mikir ulang</p>
+            <span class="channel-badge">Channel: @pastijaga | Niche Asuransi</span>
+        </div>
+
+        <div class="content">
+            <!-- Ide Konten 1 -->
+            <div class="section">
+                <h2>Ide #1</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"5 Kebohongan Tentang Asuransi yang Bikin Lo RUGI BESAR"</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"Lo pernah denger 'asuransi itu penipuan'? 'Rugi kalau gak klaim'? 'Mending nabung sendiri'? Gue akan buktiin semua itu SALAH. Dan kebodohan ini udah bikin jutaan keluarga Indonesia menderita."</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Mitos: "Asuransi itu penipuan" - Fakta: yang nipu itu oknum, bukan sistem<br>
+2. Mitos: "Rugi kalau gak klaim" - Fakta: lo juga bayar BPJS tiap bulan, pernah ngeluh rugi?<br>
+3. Mitos: "Mending nabung sendiri" - Fakta: kalau besok kena kanker, tabungan lo cukup?<br>
+4. Mitos: "Asuransi cuma buat orang kaya" - Fakta: justru orang biasa yang paling butuh<br>
+5. Mitos: "Klaim pasti dipersulit" - Fakta: 97% klaim yang dokumen lengkap PASTI cair<br>
+6. Closing: "Yang bikin rugi bukan beli asuransi, tapi percaya mitos tanpa cek fakta"<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Myth-busting agresif + data + tough love</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Skeptis asuransi, usia 25-45, pernah dengar cerita negatif<br>
+<br>
+<span class="label">CTA:</span><br>
+"Masih ragu? Tanya langsung ke aku. Gue jawab jujur, no bullshit."
+                </div>
+            </div>
+
+            <!-- Ide Konten 2 -->
+            <div class="section">
+                <h2>Ide #2</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"Hal yang Agen Asuransi GAK AKAN Pernah Kasih Tau Lo"</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"Ada hal-hal yang 99% agen asuransi SENGAJA gak kasih tau ke nasabahnya. Bukan karena bohong, tapi karena kalau lo tau... lo bakal mikir 10x sebelum tanda tangan polis."</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Masa tunggu (waiting period) - banyak yang gak dijelaskan di awal<br>
+2. Exclusion list - penyakit yang TIDAK ditanggung<br>
+3. Perbedaan rider wajib vs optional - yang sering di-skip<br>
+4. Ilustrasi vs realita - kenapa return investasi bisa jauh berbeda<br>
+5. Hak free look period 14 hari - bisa batalin tanpa rugi<br>
+6. Cara baca polis yang benar - bagian mana yang WAJIB dicek<br>
+7. Closing: "Agen yang baik itu yang kasih tau semua ini DI AWAL"<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Insider knowledge + transparansi radikal + self-aware critique</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Orang yang sudah atau mau beli asuransi, butuh second opinion<br>
+<br>
+<span class="label">CTA:</span><br>
+"Mau review polis lo GRATIS? Aku cek ada gap atau gak. Chat aku."
+                </div>
+            </div>
+
+            <!-- Ide Konten 3 -->
+            <div class="section">
+                <h2>Ide #3</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"Kenapa Orang Kaya SEMUA Punya Asuransi, Tapi Orang Miskin Nolak?"</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"Orang-orang terkaya di Indonesia punya asuransi miliaran. Sementara orang biasa bilang 'gak mampu'. Ini bukan soal uang. Ini soal mindset."</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Fakta: 90% orang kaya punya multiple polis asuransi<br>
+2. Fakta: Hanya 7% masyarakat Indonesia punya asuransi jiwa<br>
+3. Paradox: Yang punya uang beli proteksi, yang gak punya malah nolak<br>
+4. Alasan sebenarnya: Bukan "gak mampu" tapi "gak prioritas"<br>
+5. Matematika sederhana: Kopi 25rb/hari = 750rb/bulan = sudah cukup untuk premi<br>
+6. Mindset orang kaya: "Protect first, grow later"<br>
+7. Challenge: "Coba cek pengeluaran lo bulan ini, mana yang lebih penting?"<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Class comparison + mindset shift + uncomfortable truth</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Middle class yang bilang "belum mampu" tapi spending lifestyle tinggi<br>
+<br>
+<span class="label">CTA:</span><br>
+"Mau tau proteksi yang sesuai budget lo? Mulai dari harga 1 cup kopi/hari."
+                </div>
+            </div>
+
+            <!-- Ide Konten 4 -->
+            <div class="section">
+                <h2>Ide #4</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"BPJS Sudah Cukup? Ini FAKTA yang Bikin Lo Kaget."</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"Lo pikir BPJS udah cover semuanya? Coba jawab: kalau lo kena kanker besok, BPJS tanggung berapa persen? Jawabannya bakal bikin lo gak bisa tidur malam ini."</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Apa yang BPJS cover: rawat inap, obat standar, operasi tertentu<br>
+2. Apa yang BPJS TIDAK cover: kamar VIP, obat non-formularium, second opinion<br>
+3. Realita: Antrian panjang, rujukan bertingkat, limit obat<br>
+4. Gap analysis: Biaya kanker 500 juta, BPJS cover mungkin 60-70%<br>
+5. Sisanya siapa yang bayar? Tabungan? Jual aset? Hutang?<br>
+6. Solusi: BPJS + asuransi swasta = double protection<br>
+7. Pesan: "BPJS itu fondasi. Tapi fondasi doang gak cukup buat bangun rumah."<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Reality check + data driven + solutif (bukan menjatuhkan BPJS)</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Orang yang merasa "udah ada BPJS, ngapain beli asuransi lagi"<br>
+<br>
+<span class="label">CTA:</span><br>
+"Mau tau gap proteksi lo di mana? Aku bantu analisa GRATIS."
+                </div>
+            </div>
+
+            <!-- Ide Konten 5 -->
+            <div class="section">
+                <h2>Ide #5</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"3 Kesalahan FATAL yang Bikin Klaim Asuransi Lo DITOLAK"</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"Lo bayar premi bertahun-tahun. Pas mau klaim... DITOLAK. Uang hilang, proteksi zonk. Dan ini terjadi ke RIBUAN orang Indonesia setiap tahun. Kenapa?"</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Kesalahan #1: Gak jujur saat mengisi SPAJ (riwayat kesehatan disembunyikan)<br>
+2. Kenapa fatal: Non-disclosure = polis bisa dibatalkan sepihak<br>
+3. Kesalahan #2: Gak baca exclusion list di polis<br>
+4. Contoh: Klaim ditolak karena penyakit termasuk pre-existing condition<br>
+5. Kesalahan #3: Telat lapor klaim atau dokumen tidak lengkap<br>
+6. Tips: Timeline klaim yang benar dan dokumen wajib<br>
+7. BONUS: Cara memastikan klaim lo pasti cair<br>
+8. Pesan: "Masalahnya bukan di asuransinya. Masalahnya di CARA lo beli dan klaim."<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Problem-solution + edukasi + consumer protection</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Pemegang polis existing + calon nasabah yang takut klaim ditolak<br>
+<br>
+<span class="label">CTA:</span><br>
+"Takut klaim ditolak? Aku bantu review polis lo, pastikan semua aman."
+                </div>
+            </div>
+
+            <!-- Ide Konten 6 -->
+            <div class="section">
+                <h2>Ide #6</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"Asuransi Unit Link: INVESTASI atau JEBAKAN? Ini Faktanya."</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"Unit link: produk paling kontroversial di industri asuransi. Ada yang bilang scam, ada yang bilang produk terbaik. Kebenaran ada di tengah. Dan hari ini gue bongkar semuanya."</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Apa itu unit link sebenarnya: asuransi + investasi dalam 1 produk<br>
+2. Kenapa kontroversial: biaya akuisisi tinggi di 5 tahun pertama<br>
+3. Siapa yang untung: nasabah yang PAHAM produknya<br>
+4. Siapa yang rugi: nasabah yang beli karena iming-iming return tinggi<br>
+5. Kapan unit link cocok: butuh proteksi + gak disiplin nabung sendiri<br>
+6. Kapan TIDAK cocok: fokus investasi murni, lebih baik reksadana<br>
+7. Kesimpulan: "Bukan produknya yang salah, tapi cara jualnya yang sering salah"<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Balanced controversial take + edukasi + trust building</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Orang yang bingung/ragu tentang unit link, pernah dengar cerita buruk<br>
+<br>
+<span class="label">CTA:</span><br>
+"Bingung pilih unit link atau term life? Konsultasi dulu, gratis kok."
+                </div>
+            </div>
+
+            <!-- Ide Konten 7 -->
+            <div class="section">
+                <h2>Ide #7</h2>
+                <h3>Judul Video</h3>
+                <p><strong>"Umur 25 Gak Punya Asuransi? Lo Sedang Berjudi dengan Hidup Keluarga Lo."</strong></p>
+
+                <div class="code-block">
+<span class="label">HOOK (5 detik pertama):</span><br>
+<span class="hook">"Lo pake helm buat jaga kepala. Lo pake seatbelt buat jaga badan. Tapi lo GAK punya asuransi buat jaga keluarga lo? Itu namanya judi. Dan taruhannya... masa depan orang yang lo cintai."</span><br>
+<br>
+<span class="label">OUTLINE:</span><br>
+1. Analogi: Semua orang pakai pengaman, tapi finansial dibiarkan telanjang<br>
+2. Statistik: Probabilitas sakit kritis sebelum usia 50 = 1 dari 4 orang<br>
+3. Biaya RS rata-rata: Jantung 300-800 juta, Kanker 500 juta-1.5 miliar<br>
+4. Yang terjadi tanpa asuransi: Jual aset, utang, beban keluarga<br>
+5. Solusi realistis: Premi yang affordable di usia muda<br>
+6. Matematika: Premi usia 25 vs usia 40 - selisih bisa 2-3x lipat<br>
+7. Pesan: "Waktu terbaik beli asuransi itu kemarin. Waktu kedua terbaik: HARI INI."<br>
+<br>
+<span class="label">ANGLE:</span><br>
+<span class="highlight">Wake-up call + statistik menohok + urgency</span><br>
+<br>
+<span class="label">TARGET:</span><br>
+Anak muda 22-30 yang merasa "masih muda, belum perlu"<br>
+<br>
+<span class="label">CTA:</span><br>
+"Usia lo sekarang = premi termurah yang bisa lo dapat. Cek sekarang sebelum naik."
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <h4>Hubungi Kami</h4>
+                <div class="cta-item">
+                    <div class="icon whatsapp">&#9742;</div>
+                    <div>
+                        <strong>WhatsApp:</strong>
+                        <a href="https://wa.me/6287781896087" target="_blank">087781896087</a>
+                    </div>
+                </div>
+                <div class="cta-item">
+                    <div class="icon web">&#127760;</div>
+                    <div>
+                        <strong>Web:</strong>
+                        <a href="https://pastijaga.petrusjakub.workers.dev/" target="_blank">https://pastijaga.petrusjakub.workers.dev/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; 2025 @pastijaga - Konten Minggu 3 | Controversial/Myth-busting - Viral Potential
+        </div>
+    </div>
+</body>
+</html>
